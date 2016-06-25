@@ -6,21 +6,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tablero.controlador.vista.PanelIzquierdoMovimientoController">
+<AnchorPane prefHeight="375.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tablero.controlador.vista.PanelIzquierdoMovimientoController">
    <children>
-      <VBox layoutX="74.0" layoutY="122.0" spacing="60.0">
+      <Button layoutX="48.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleCambioTurno" text="Finalizar Turno" />
+      <VBox layoutX="75.0" layoutY="99.0" spacing="60.0">
          <children>
             <Button layoutX="74.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleBotonArriba" text="Arriba" />
             <Button layoutX="74.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleBotonAbajo" text="Abajo" />
          </children>
       </VBox>
-      <HBox layoutX="18.0" layoutY="165.0" spacing="60.0" AnchorPane.leftAnchor="5.0">
-         <children>
-            <Button layoutX="14.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleBotonIzq" text="Izquierda" />
-            <Button layoutX="134.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleBotonDer" text="Derecha" />
-         </children>
-      </HBox>
-      <GridPane layoutY="14.0">
+      <GridPane layoutX="5.0" layoutY="14.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="59.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="141.0" />
@@ -41,8 +36,13 @@
             </Label>
          </children>
       </GridPane>
-      <Button layoutX="74.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleColor" text="Color" />
-      <GridPane layoutY="264.0">
+      <HBox layoutX="10.0" layoutY="142.0" spacing="60.0" AnchorPane.leftAnchor="10.0">
+         <children>
+            <Button layoutX="14.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleBotonIzq" text="Izquierda" />
+            <Button layoutX="134.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleBotonDer" text="Derecha" />
+         </children>
+      </HBox>
+      <GridPane layoutX="5.0" layoutY="236.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="88.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="112.0" />
@@ -55,6 +55,6 @@
             <Label fx:id="cantMovimientos" text="Label" GridPane.columnIndex="1" />
          </children>
       </GridPane>
-      <Button layoutX="50.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleCambioTurno" text="Finalizar Turno" />
+      <Button layoutX="72.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleColor" text="Color" />
    </children>
 </AnchorPane>

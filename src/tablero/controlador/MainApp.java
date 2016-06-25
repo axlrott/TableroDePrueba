@@ -110,6 +110,7 @@ public class MainApp extends Application {
             this.tablero = controller;
             
             primaryStage.setScene(scene);
+            primaryStage.sizeToScene();
             primaryStage.show();
            
 			
