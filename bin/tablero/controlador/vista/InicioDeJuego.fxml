@@ -11,7 +11,7 @@
    <children>
       <ImageView fitHeight="400.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
          <image>
-            <Image url="@../../../../bin/tablero/controlador/vista/CLBI8F9WgAA88sx.jpg" />
+            <Image url="@CLBI8F9WgAA88sx.jpg" />
          </image>
       </ImageView>
       <BorderPane prefHeight="400.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
