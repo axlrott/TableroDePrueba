@@ -16,7 +16,7 @@ import tablero.controlador.vista.TableroPrincipalController;
 public class MainApp extends Application {
 	private String nombreJugador;
 	private Stage primaryStage;
-	private BorderPane stageRaiz;
+	private BorderPane sceneRaiz;
 	private TableroPrincipalController tablero;
 
 	@Override
@@ -36,6 +36,7 @@ public class MainApp extends Application {
 			
             Scene scene = new Scene(inicio);
             primaryStage.setScene(scene);
+            primaryStage.sizeToScene();
             primaryStage.show();
             
             InicioDeJuegoController controller = loader.getController();
@@ -53,7 +54,7 @@ public class MainApp extends Application {
 			loader.setLocation(MainApp.class.getResource("vista/PanelIzquierdoMovimiento.fxml"));
 			AnchorPane panelIzquierdo = (AnchorPane) loader.load();
 			
-            stageRaiz.setLeft(panelIzquierdo);
+            sceneRaiz.setLeft(panelIzquierdo);
             PanelIzquierdoMovimientoController controladorPanelIzquierdo = loader.getController();
             
             controladorPanelIzquierdo.setMainApp(this);
@@ -70,7 +71,7 @@ public class MainApp extends Application {
 			loader.setLocation(MainApp.class.getResource("vista/PanelIzquierdoColor.fxml"));
 			AnchorPane panelIzquierdaColor = (AnchorPane) loader.load();
 			
-            stageRaiz.setLeft(panelIzquierdaColor);
+            sceneRaiz.setLeft(panelIzquierdaColor);
             
             PanelIzquierdoColorController controladorPanelIzquierdoColor = loader.getController();
             
@@ -88,7 +89,7 @@ public class MainApp extends Application {
 			loader.setLocation(MainApp.class.getResource("vista/PanelDerecho.fxml"));
 			AnchorPane panelDerecho = (AnchorPane) loader.load();
 			
-            this.stageRaiz.setRight(panelDerecho);
+            this.sceneRaiz.setRight(panelDerecho);
 			
         } catch (IOException e) {
             e.printStackTrace();
@@ -101,8 +102,8 @@ public class MainApp extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MainApp.class.getResource("vista/TableroPrincipal.fxml"));
 			
-			this.stageRaiz = (BorderPane) loader.load();
-            Scene scene = new Scene(this.stageRaiz);
+			this.sceneRaiz = (BorderPane) loader.load();
+            Scene scene = new Scene(this.sceneRaiz);
             
             TableroPrincipalController controller = loader.getController();
             controller.setMainApp(this);
@@ -132,6 +133,7 @@ public class MainApp extends Application {
 			
             Scene scene = new Scene(victoria);
             primaryStage.setScene(scene);
+            primaryStage.sizeToScene();
             primaryStage.show();
 
 
