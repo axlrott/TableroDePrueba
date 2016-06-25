@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="300.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VICTORIA?" textAlignment="CENTER" wrappingWidth="311.13671875" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Text>
+         </top>
+         <center>
+            <Group BorderPane.alignment="CENTER">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="230.0" layoutY="178.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="192.0" layoutY="150.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle layoutX="192.0" layoutY="150.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="267.0" layoutY="150.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle layoutX="267.0" layoutY="150.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Ellipse layoutX="230.0" layoutY="223.0" radiusX="61.0" radiusY="36.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

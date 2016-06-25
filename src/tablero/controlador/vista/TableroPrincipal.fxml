@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tablero.controlador.vista.TableroPrincipalController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane fx:id="matriz" gridLinesVisible="true" prefHeight="380.0" prefWidth="480.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;">
+                     <children>
+                        <Circle fx:id="redondo2" fill="#a10707" layoutX="52.0" layoutY="41.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="redondo1" fill="DODGERBLUE" layoutX="48.0" layoutY="38.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.rowIndex="1" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN; -fx-border-color: DARKVIOLET; -fx-border-width: 5;" GridPane.columnIndex="1" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN; -fx-border-color: DARKVIOLET; -fx-border-width: 5;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.rowIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.rowIndex="3" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.rowIndex="4" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="3" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="4" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <children>
+                        <Polygon fill="#d3632b" layoutX="48.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE">
+                          <points>
+                            <Double fx:value="-50.0" />
+                            <Double fx:value="40.0" />
+                            <Double fx:value="50.0" />
+                            <Double fx:value="40.0" />
+                            <Double fx:value="0.0" />
+                            <Double fx:value="-60.0" />
+                          </points>
+                        </Polygon>
+                        <Label layoutX="26.0" layoutY="24.0" style="-fx-border-width: 40;" text="CASA">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN; -fx-border-color: DARKVIOLET; -fx-border-width: 5;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN; -fx-border-color: DARKVIOLET; -fx-border-width: 5;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIGHTGREEN; -fx-border-color: DARKVIOLET; -fx-border-width: 5;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
